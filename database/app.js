@@ -11,4 +11,8 @@ const volume = require('../routes/volume');
 
 app.use('/volume', volume);
 
+app.use('/', (req, res) => {
+    res.send('Hello World');
+});
+
 module.exports = app;
