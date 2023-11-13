@@ -2,7 +2,7 @@ const app = require('./database/app');
 const debug = require('debug')('node:server');
 const http = require('http');
 
-const port = normalizePort('23130');
+const port = normalizePort('3000');
 app.set('port', port);
 
 const server = http.createServer(app);
